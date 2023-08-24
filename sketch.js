@@ -78,7 +78,7 @@ function draw() {
     solo.velocityX = -(6 + 3* pontuacao/100)
 
     
-    if(keyDown("space")&& trex.y >= 159) {
+    if(touches.length >0 || keyDown("space")&& trex.y >= 159) {
        trex.velocityY = -12;
     }
     
